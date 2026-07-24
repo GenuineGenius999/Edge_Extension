@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fluent Table Enhancer Settings</title>
+
+<link rel="stylesheet" href="options.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header>
+
+    <img 
+    src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
+    class="logo">
+
+
+    <div>
+
+        <h1>
+            Fluent Table Enhancer
+        </h1>
+
+        <p>
+            Customize your table experience
+        </p>
+
+    </div>
+
+
+</header>
+
+
+
+
+<section class="card">
+
+
+<h2>
+General Settings
+</h2>
+
+
+<div class="setting">
+
+<label>
+Enable extension
+</label>
+
+
+<input 
+type="checkbox"
+id="enabled">
+
+</div>
+
+
+
+<div class="setting">
+
+<label>
+Dark mode
+</label>
+
+
+<input 
+type="checkbox"
+id="darkMode">
+
+</div>
+
+
+
+<div class="setting">
+
+<label>
+Animations
+</label>
+
+
+<input 
+type="checkbox"
+id="animations">
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Table Appearance
+</h2>
+
+
+
+<div class="setting">
+
+
+<label>
+Font size
+</label>
+
+
+<select id="fontSize">
+
+<option value="13">
+Small
+</option>
+
+<option value="14" selected>
+Normal
+</option>
+
+<option value="16">
+Large
+</option>
+
+<option value="18">
+Extra Large
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+<div class="setting">
+
+
+<label>
+Border radius
+</label>
+
+
+<input
+type="range"
+id="radius"
+min="0"
+max="30"
+value="14">
+
+
+</div>
+
+
+
+
+
+
+<div class="setting">
+
+
+<label>
+Header color
+</label>
+
+
+<input
+type="color"
+id="headerColor"
+value="#0078d4">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Features
+</h2>
+
+
+
+<div class="setting">
+
+<label>
+Sticky header
+</label>
+
+<input
+type="checkbox"
+id="stickyHeader"
+checked>
+
+
+</div>
+
+
+
+<div class="setting">
+
+<label>
+Sticky first column
+</label>
+
+<input
+type="checkbox"
+id="stickyColumn"
+checked>
+
+
+</div>
+
+
+
+<div class="setting">
+
+<label>
+Status badges
+</label>
+
+<input
+type="checkbox"
+id="badges"
+checked>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<button id="save">
+
+Save Settings
+
+</button>
+
+
+
+<div id="saved">
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="options.js"></script>
+
+
+</body>
+
+</html>
