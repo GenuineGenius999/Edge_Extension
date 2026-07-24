@@ -1,0 +1,464 @@
+/* =====================================================
+   Fluent Table Enhancer
+   Options Page Styling
+   Microsoft Fluent UI Inspired
+===================================================== */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin:0;
+
+    min-height:100vh;
+
+    font-family:
+        "Segoe UI Variable",
+        "Segoe UI",
+        Inter,
+        Arial,
+        sans-serif;
+
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3f9ff,
+            #ffffff
+        );
+
+
+    color:#323130;
+
+}
+
+
+
+/* Main container */
+
+.container {
+
+    max-width:850px;
+
+    margin:40px auto;
+
+    padding:25px;
+
+}
+
+
+
+/* Header */
+
+
+header {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.logo {
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.15);
+
+}
+
+
+
+h1 {
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#201f1e;
+
+}
+
+
+
+header p {
+
+    margin:6px 0 0;
+
+    color:#605e5c;
+
+    font-size:15px;
+
+}
+
+
+
+/* Cards */
+
+
+.card {
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    margin-bottom:22px;
+
+
+    border:
+
+        1px solid #edebe9;
+
+
+    box-shadow:
+
+        0 4px 14px rgba(0,0,0,.08);
+
+
+    transition:.25s;
+
+}
+
+
+
+.card:hover {
+
+    box-shadow:
+
+        0 8px 24px rgba(0,0,0,.12);
+
+}
+
+
+
+.card h2 {
+
+    margin-top:0;
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+    color:#323130;
+
+}
+
+
+
+/* Settings row */
+
+
+.setting {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+
+    border-bottom:
+
+        1px solid #f3f2f1;
+
+}
+
+
+
+.setting:last-child {
+
+    border-bottom:none;
+
+}
+
+
+
+.setting label {
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+/* Checkbox */
+
+
+input[type="checkbox"] {
+
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:#0078d4;
+
+    cursor:pointer;
+
+}
+
+
+
+/* Select */
+
+
+select {
+
+
+    padding:
+
+        8px 14px;
+
+
+    border-radius:10px;
+
+
+    border:
+
+        1px solid #c8c6c4;
+
+
+    background:white;
+
+
+    font-size:14px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+select:focus {
+
+    outline:
+
+        2px solid #0078d4;
+
+}
+
+
+
+/* Range slider */
+
+
+input[type="range"] {
+
+
+    width:220px;
+
+    accent-color:#0078d4;
+
+
+}
+
+
+
+/* Color picker */
+
+
+input[type="color"] {
+
+
+    width:55px;
+
+    height:35px;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    background:none;
+
+}
+
+
+
+/* Save button */
+
+
+button {
+
+
+    width:100%;
+
+
+    padding:14px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #0078d4,
+
+            #005a9e
+
+        );
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    transition:.2s;
+
+
+}
+
+
+
+button:hover {
+
+
+    transform:translateY(-2px);
+
+
+    box-shadow:
+
+        0 8px 20px rgba(0,120,212,.35);
+
+
+}
+
+
+
+button:active {
+
+
+    transform:scale(.98);
+
+
+}
+
+
+
+/* Saved message */
+
+
+#saved {
+
+
+    text-align:center;
+
+
+    margin-top:18px;
+
+
+    color:#107c10;
+
+
+    font-weight:600;
+
+
+    min-height:20px;
+
+
+}
+
+
+
+/* Dark mode preview */
+
+
+.dark-preview {
+
+
+    background:#1b1a19;
+
+    color:white;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:700px){
+
+
+    .container {
+
+        margin:15px;
+
+        padding:10px;
+
+    }
+
+
+
+    header {
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+
+    .setting {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+
+
+    input[type="range"] {
+
+        width:100%;
+
+    }
+
+
+}

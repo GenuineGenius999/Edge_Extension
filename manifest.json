@@ -1,8 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Modern Table Style",
-  "description": "Automatically beautify HTML tables on every website.",
+  "name": "Fluent Table Enhancer",
+  "short_name": "FluentTables",
   "version": "1.0.0",
+  "description": "Automatically transforms HTML tables into beautiful, modern, interactive tables with Fluent UI styling.",
+
+  "author": "Your Name",
+  "homepage_url": "https://example.com",
+
+  "minimum_chrome_version": "110",
+
+  "permissions": [
+    "storage"
+  ],
 
   "host_permissions": [
     "<all_urls>"
@@ -21,5 +31,28 @@
       ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+
+  "action": {
+    "default_title": "Fluent Table Enhancer",
+    "default_popup": "popup.html"
+  },
+
+  "options_page": "options.html",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "commands": {
+    "toggle-enhancer": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Enable or disable table enhancement"
+    }
+  }
 }
